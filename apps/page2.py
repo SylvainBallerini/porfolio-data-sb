@@ -10,7 +10,7 @@ from dash.exceptions import PreventUpdate
 
 layout = [
         html.H2("Évolution de la population mondiale entre 1800 et 2100"),
-        html.P("Problématique : quel est l'évolution de la population entre 1800 et 2100"),
-        html.P("Ici j'ai utilisé un bar chart race qui permet rapidement de voir les 20 pays avec la plus forte population"),
+        html.P("Problématique : quelle est l'évolution de la population entre 1800 et 2100."),
+        html.P("Ici j'ai utilisé un bar chart race qui permet rapidement de voir les 20 pays avec la plus forte population."),
         html.Iframe(src='https://flo.uri.sh/visualisation/5812050/embed', style={"overflow": "hidden", "height": "800px", "width": "100%"})
         ]

@@ -27,8 +27,8 @@ fig = px.scatter_geo(df,
 layout = [ 
                 html.H2("Impact des météorites de 1680 à 2020"),
                 html.P("Voici un projet de l'école durant un hackathon d'une durée de 24h, avec la problèmatique suivante : "),
-                html.P("Quel est la répartition des chutes de météorite dans le monde, par type entre 1700 et 2100"),
+                html.P("Quelle est la répartition des chutes de météorites dans le monde, par type entre 1700 et 2100."),
                 html.P("En utilisant la bibliothèque Plotly qui est un framework Python j'ai développé un graphique dynamique qui répond à la problèmatique"),
-                html.P("En appyant sur play ou en bougeant le curseur on peut ainsi voir les chutes de météorites dans le temps et par type"),
+                html.P("En appuyant sur play ou en bougeant le curseur on peut ainsi voir les chutes de météorites dans le temps et par type"),
                 dcc.Graph(figure=fig)
         ]

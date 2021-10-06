@@ -58,14 +58,14 @@ layout = dbc.Container(children=[
     
     html.H4('Recommandation'),
 
-    html.P("Projet de l'école avec comme problèmatique : faire un système de recommandation de film (comme Netflix) pour un cinéma dans la creuse.\
-    On a utilisé la base de donnée IMDB qui référence des millions de fiml.\
+    html.P("Projet de l'école avec comme problèmatique : faire un système de recommandation de film (comme Netflix) pour un cinéma dans la Creuse.\
+    On a utilisé la base de données IMDB qui référence des millions de films.\
     Ensuite on a décidé de ne garder que 5000 films pour obtenir un catalogue aussi large que Netflix.\
-    Les films doivent être en version françaises et d'une durée entre 1h30 et 2h30."),
-    html.P("Une fois se travaille de sélection et de nettoyage fait sur le dataset, il faut utiliser le Machine Learning pour la recommandation.\
-    Dans un 1er temps j'ai entrainé un modèle avec l'algorithme du KNN (k-nearest neighbors ou le plus proches voisins en français.\
-    En mettant en features (caractéristiques) la durée du film, les genres du film, l'année de sortie on obtient un modêle prêt pour la recommandation.\
-    Ainsi si vous selectionnez un film dans le menu déroulant ou le tapant vous aurez le film que vous avez choisi et 5 films qui sont les plus proches en se bassant sur les 3 features que j'ai cité avant."),
+    Les films doivent être en version française et d'une durée entre 1h30 et 2h30."),
+    html.P("Une fois ce travail de sélection et de nettoyage fait sur le dataset, il faut utiliser le Machine Learning pour la recommandation.\
+    Dans un premier temps j'ai entrainé un modèle avec l'algorithme du KNN (k-nearest neighbors ou les plus proches voisins en français).\
+    En mettant en features (caractéristiques) la durée du film, les genres du film, l'année de sortie, on obtient un modêle prêt pour la recommandation.\
+    Ainsi si vous selectionnez un film dans le menu déroulant ou en le tapant vous aurez le film que vous avez choisi et 5 films qui sont les plus proches en se basant sur les 3 features que j'ai cités avant."),
     html.H5("Technologies utilisées : scikit-learn KNN, pandas, numpy, css, html, python"),
 
     html.H6("Sélectionnez un film que vous aimez"),
