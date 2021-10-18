@@ -8,7 +8,7 @@ import pandas as pd
 # Connect to main app.py file
 from app import app, server
 # Connect to your app pages
-from apps import home, page1, page2, page3
+from apps import home, page1, page2, page3, projets_streamlit
 
 #server = app.server
 # styling the sidebar
@@ -43,9 +43,10 @@ sidebar = html.Div(
             [
                 dbc.NavLink("home", href="/home", active="exact"),
                 html.H4("Projets"),
-                dbc.NavLink("page1", href="/page1", active="exact"),
-                dbc.NavLink("page2", href="/page2", active="exact"),
-                dbc.NavLink("page3", href="/page3", active="exact"),
+                dbc.NavLink("Impact des météorites", href="/page1", active="exact"),
+                dbc.NavLink("Bar chart race", href="/page2", active="exact"),
+                dbc.NavLink("Système de recommandation", href="/page3", active="exact"),
+                dbc.NavLink("Streamlit", href='/projets_streamlit', active="exact")
             ],
             vertical=True,
             pills=True,
@@ -75,6 +76,8 @@ def display_page(pathname):
         return page3.layout
     elif pathname == '/home' :
         return home.layout
+    elif pathname == '/projets_streamlit':
+        return projets_streamlit.layout
     else:
         return dbc.Jumbotron(
             [
