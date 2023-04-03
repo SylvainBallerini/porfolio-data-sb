@@ -43,10 +43,11 @@ sidebar = html.Div(
             [
                 dbc.NavLink("home", href="/home", active="exact"),
                 html.H4("Projets"),
-                dbc.NavLink("Impact des météorites", href="/page1", active="exact"),
-                dbc.NavLink("Bar chart race", href="/page2", active="exact"),
                 dbc.NavLink("Système de recommandation", href="/page3", active="exact"),
-                dbc.NavLink("Streamlit", href='/projets_streamlit', active="exact")
+                dbc.NavLink("Impact des météorites", href="/page1", active="exact"),
+                #dbc.NavLink("Bar chart race", href="/page2", active="exact"),
+
+                #dbc.NavLink("Streamlit", href='/projets_streamlit', active="exact")
             ],
             vertical=True,
             pills=True,
